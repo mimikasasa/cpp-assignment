@@ -1,5 +1,5 @@
 #include<iostream>
-#include<iomanip>
+#include<iomanip>//setw使用时应该放在两个输出的中间  i.e.  cout<<"abcd"<<setw()<<"fajdajs" 当然最前面也可以但是第二项得有
 #include<ctime>	
 using namespace std;
 
