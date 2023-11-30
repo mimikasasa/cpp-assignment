@@ -1,6 +1,6 @@
 #include<iostream>
-#include<iomanip>//setw使用时应该放在两个输出的中间  i.e.  cout<<"abcd"<<setw()<<"fajdajs" 当然最前面也可以但是第二项得有
-#include<ctime>	
+#include<iomanip>//setw使用时应该放在两个输出的中间  i.e.  cout<<"abcd"<<setw()<<"fajdajs" 当然最前面也可以但是第二项得有 setw括号内得比原来的东西长才能发挥作用
+#include<ctime>	  //  如 salesperson1<<setw(10)  这样是没用的 因为salesperson1 12个长度大于10
 using namespace std;
 
 int main()
