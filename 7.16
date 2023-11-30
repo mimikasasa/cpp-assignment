@@ -1,1 +1,49 @@
+#include<iostream>
+#include<iomanip>
+#include<ctime>	
+using namespace std;
 
+int main()
+{
+	srand(time(0));//投放随机数种子
+	int die1, die2, sum;
+
+	int frequency[11] = { 0 };//frequency[0]stands for the frequency of 2, [1] of 3,......[10] of 12
+
+	for (int i = 0; i < 36000; i++)
+	{	
+		die1 = rand() % 6 + 1, die2 = rand() % 6 + 1;
+		sum = die1 + die2;
+
+		switch (sum)
+		{
+		case  2: frequency[0]++; break;
+		case  3: frequency[1]++; break;
+		case  4: frequency[2]++; break;
+		case  5: frequency[3]++; break;
+		case  6: frequency[4]++; break;
+		case  7: frequency[5]++; break;
+		case  8: frequency[6]++; break;
+		case  9: frequency[7]++; break;
+		case 10: frequency[8]++; break;
+		case 11: frequency[9]++; break;
+		case 12:frequency[10]++; break;
+		}
+	}
+
+	cout << setw(9)<<"sum";
+	for (int k = 2; k < 13; k++)
+	{
+		cout << setw(10) << k;
+	}
+	cout << endl;
+
+	cout << "frequency" <<setw(2);
+	for (int j = 0; j < 11; j++)
+	{	
+		cout<< setw(10)<<frequency[j];
+	}
+
+	system("pause");
+	return 0;
+}
