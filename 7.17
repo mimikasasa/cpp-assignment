@@ -24,3 +24,5 @@ int whatisthis(const array<int, arraysize>& b, size_t size)
 	else
 		return b[size - 1] + whatisthis(b, size - 1);
 }
+//what does this code do?
+//
